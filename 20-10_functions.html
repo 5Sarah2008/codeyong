@@ -1,0 +1,66 @@
+<html>
+    <body>
+        <button onmouseover="rounding()">hi</button>
+        <button onmouseover="round_up()">hi</button>
+        <button onmouseover="round_down()">hi</button>
+        <button onmouseover="keep_integer()">hi</button>
+        <button onmouseover="equation_sign()">hi</button>
+        <button onmouseover="Number_power()">hi</button>
+        <button onmouseover="square_root()">hi</button>
+        <button onmouseover="absulute_positive()">hi</button>
+        <button onmouseover="minimum()">hi</button>
+        <button onmouseover="maximum()">hi</button>
+        <button onmouseover="average()">hi</button>
+        <script>
+            function rounding(){
+                var a=prompt("enter a decimal");
+                alert(Math.round(a));
+            }
+            function round_up(){
+                var a=prompt("enter a decimal");
+                alert(Math.ceil(a));
+            }
+            function round_down(){
+                var a=prompt("enter a decimal");
+                alert(Math.floor(a));
+            }
+            function keep_integer(){
+                var a=prompt("enter a decimal");
+                alert(Math.trunc(a));
+            }
+            function equation_sign(){
+                var a=prompt("enter a decimal");
+                alert(Math.sign(a));
+            }
+            function Number_power(){
+                var a=prompt("enter a number");
+                var b=prompt("enter your power");
+                alert(Math.pow(a,b));
+            }
+            function equation_sign(){
+                var a=prompt("enter a number");
+                alert(Math.sqrt(a));
+            }
+            function absulute_positive(){
+                var a=prompt("enter a number");
+                alert(Math.abs(a));
+            }
+            function maximum(){
+                //var a=prompt("enter a number");
+                alert(Math.max(10, 11, 50, 2, 61, 44));
+            }
+            function average(){
+                //var a=prompt("enter a number");
+                //var b=prompt("enter your 2nd number");
+                var msg=0;
+                var d=0;
+                for( c=5; c<=10; c++){
+                    msg += c;
+                    d++; 
+                }
+                alert(msg/d);   
+                
+            }
+        </script>
+    </body>
+</html>
