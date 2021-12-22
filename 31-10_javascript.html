@@ -1,0 +1,53 @@
+<html>
+
+<body style="text-align: center; padding-top: 200px; background-color: aqua;">
+    <form action="">
+        <input type="text" id="number1" style="padding: 10px; background-color: rgb(255, 248, 236);"
+            placeholder="your age...">
+        <button onclick="age_age()" style="padding: 10px; background-color: wheat;" >Submit</button>
+        <p>enter your age, and see from which age group you are!</p>
+<br><br>
+     </form>
+     <form action="">
+        <input type="text" id="number2" style="padding: 10px; background-color: rgb(255, 248, 236);"
+        placeholder="your mark...">
+    <button onclick="mark_mark()" style="padding: 10px; background-color: wheat;" >Submit</button>
+
+<p>enter your mark without "%" but out of hundred to see if you failed, or etc....</p>
+     </form>
+
+    <script>
+        function age_age() {
+            if (document.getElementById("number1").value >= 1 && document.getElementById("number1").value <= 10) {
+                alert("👩‍🦲 you are a kid 👨‍🦲")
+            }
+
+            else if ( document.getElementById("number1").value > 10 && document.getElementById("number1").value <= 18) {
+                alert("👧 you are a junior 👨")
+            }
+            else if (document.getElementById("number1").value <= 60 && document.getElementById("number1").value > 18) {
+                alert("🧑 you are an adult 🧔")
+            }
+            else {
+                alert("👵 you are a senior 👴")
+            }
+        }
+
+        function mark_mark() {
+            if (document.getElementById("number2").value >= 1 && document.getElementById("number2").value <= 60) {
+                alert("ALERT YOU NEED TO WORK REALLY HARD")
+            }
+
+            else if ( document.getElementById("number2").value > 60 && document.getElementById("number2").value <= 80) {
+                alert("ALERT KEEP WORKING FOR BETTER")
+            }
+            else if (document.getElementById("number2").value >= 80 && document.getElementById("number2").value <= 100) {
+                alert("MAINTAIN THE CONSISTENCY")
+            }else {
+                alert("wrong number")
+            }
+        }
+    </script>
+</body>
+
+</html>
