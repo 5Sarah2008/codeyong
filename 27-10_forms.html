@@ -1,0 +1,19 @@
+<html>
+    <body style="background-color: aquamarine; text-align: center; padding-top: 250px;">
+        <form>
+    <label for="number">number</label><br>
+    <input type="text" name="" id="number1" placeholder="enter a number" >
+<button onclick="thenumbers()">submit</button>
+        </form>
+        <script>
+function thenumbers(){
+    if (document.getElementById("number1").value<5 || document.getElementById("number1").value>100){
+        alert("number is correct")
+        }
+        else{
+            alert("number is wrong!!")
+        }
+}
+        </script>
+    </body>
+</html>
