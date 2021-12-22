@@ -1,0 +1,116 @@
+<html style="font-family: 'Montserrat', sans-serif;">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <style>
+            button{
+                padding: 10px;
+                background-color: rgb(255, 225, 187);
+            }
+            input{
+                padding: 10px;
+                background-color: rgb(255, 245, 232);
+               
+            }
+            form{
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <p>odd or even??</p>
+            <input type="text" id="no1">
+        <button onclick="odd_even();">SUBMIT NOW!</button>
+<br><br></form>
+<form action="">
+    <p>Positive or negetive??</p>
+  <input type="text" id="no2">
+        <button onclick="neg_positive();">SUBMIT NOW!</button>  
+</form> 
+<form action="">
+    <p>Day</p>
+    <input type="text" id="no">
+          <button onclick="check_day();">SUBMIT NOW!</button>  
+  </form> 
+  <form action="">
+    <p>month</p>
+    <input type="text" id="no3">
+          <button onclick="check_month();">SUBMIT NOW!</button>  
+  </form>       
+
+        <script type="text/javascript">
+function odd_even(){
+    if(document.getElementById("no1").value%2 == 0 ){
+        alert("the number is even")
+    }else{
+        alert("the number is odd")
+    }
+}
+
+function neg_positive(){
+    if(document.getElementById("no2").value<0){
+        alert("the number is negetive")
+    }else if(document.getElementById("no2").value>0){
+        alert("the number is positive")
+    }else{
+        alert("the number is 0")
+    } 
+}
+function check_day(){
+var today = new Date();
+switch(document.getElementById("no").value){
+    case "0":alert("sunday");
+    break;
+    case "1":alert("monday");
+    break;
+    case "2":alert("tuesday");
+    break;
+    case "3":alert("wednesday");
+    break;
+    case "4":alert("thursday");
+    break;
+    case "5":alert("friday");
+    break;
+    case "6":alert("saterday");
+    break;
+
+    default:alert("you have entered the wrong number");
+}
+}
+
+function check_month(){
+switch(document.getElementById("no3").value){
+    case "0":alert("January");
+    break;
+    case "1":alert("February");
+    break;
+    case "2":alert("March");
+    break;
+    case "3":alert("April");
+    break;
+    case "4":alert("May");
+    break;
+    case "5":alert("June");
+    break;
+    case "6":alert("July");
+    break;
+    case "7":alert("Augest");
+    break;
+    case "8":alert("September");
+    break;
+    case "9":alert("October");
+    break;
+    case "10":alert("November");
+    break;
+    case "11":alert("December");
+    break;
+
+    default:alert("you have entered the wrong number");
+}
+}
+        </script>
+    </body>
+</html>
