@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+           button{
+               padding: 10px;
+               background-color: rgb(255, 227, 194);
+               font-size: 500;
+           }
+        </style>
+    </head>
+    <body>
+        <button onclick="print_numbers()">⁛</button>
+        <button onclick="numbers()">⁛</button>
+        <div id="id1"></div>
+        <script>
+            function print_numbers(){
+                var msg="";
+                for( a=1; a<=10; a++){
+                    msg += a;
+                }
+                
+                document.getElementById("id1").innerHTML = msg;
+            }
+            function numbers(){
+                var a=prompt("please enter first value");
+                var b=prompt("please enter second value");
+                var msg="";
+                for ( c=a;  c<=b;  c++){
+                    msg += c;
+                }alert(msg)
+            }
+        </script>
+       
+    </body>
+</html>
