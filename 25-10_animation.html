@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+    <head>
+        <title>animation</title>
+        <style>
+            .div{
+                width: 200px;
+                height: 150px;
+                background-color: antiquewhite;
+                animation-name: changecolor;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes changecolor {
+                from{background-color: aqua;}
+                to{background-color: rgb(255, 0, 191);}
+            }
+
+            .div1{
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background-color: antiquewhite;
+                animation-name: colorchange;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes colorchange {
+                0%{background-color: red;}
+                25%{background-color: rgb(251, 255, 0);}
+                50%{background-color: rgb(0, 255, 13);}
+                75%{background-color: rgb(47, 0, 255);}
+                100%{background-color: rgb(255, 0, 0);}
+            }
+            .div2{
+                width: 200px;
+                height: 200px;
+                background-color: antiquewhite;
+                animation-name: changeincolor;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes changeincolor {
+                25%{background-color: rgb(21, 255, 0);}
+                50%{background-color: rgb(4, 0, 255);}
+                75%{background-color: rgb(255, 0, 0);}
+                100%{background-color: rgb(255, 238, 0);}
+            }
+            .div3{
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background-color: antiquewhite;
+                animation-name: changeofcolor;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                position: relative;
+            }
+            @keyframes changeofcolor {
+                0%{left: 0px; top: 0px;}
+                25%{left: 200px; top: 0px;}
+                50%{left: 200px; top: 200px;}
+                75%{left: 0px; top: 200px;}
+                100%{left: 0px; top: 0px;}
+            }
+            .div4{
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background-color: antiquewhite;
+                animation-name: changeingofcolor;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                position: relative;
+            }
+            @keyframes changeingofcolor {
+                0%{left: 0px; top: 0px; background-color: red;}
+                25%{left: 200px; top: 0px; background-color: rgb(251, 255, 0);}
+                50%{left: 200px; top: 200px; background-color: rgb(0, 255, 34);}
+                75%{left: 0px; top: 200px; background-color: rgb(4, 0, 255);}
+                100%{left: 0px; top: 0px; background-color: rgb(255, 0, 191);}
+            }
+            .div4{
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background-color: antiquewhite;
+                animation-name: changeingincolor;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                position: relative;
+                animation-direction: alternate;
+            }
+            @keyframes changeingincolor {
+                0%{left: 0px; top: 0px;background: url(https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);}
+                25%{left: 200px; top: 0px; background: url(https://images.unsplash.com/photo-1567334037232-8e02cf81ca04?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zmxvd2VyJTIwb3BlbmluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);}
+                50%{left: 200px; top: 200px; background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjWy02SVXJTTVWYJbswaM7frWFzxxACWziYjfLcFfQe_MfyC8W_4UiRKLNkOirCaCV2fk&usqp=CAU);}
+                75%{left: 0px; top: 200px; background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLRuQjbdtAhfgc37fdfkAOMtWSF9yH-xVimw&usqp=CAU);}
+                100%{left: 0px; top: 0px; background: url(https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);}
+            }
+            #a1{animation-timing-function: linear;}
+            #a2{animation-timing-function: ease;}
+            #a3{animation-timing-function: ease-in;}
+            #a4{animation-timing-function: ease-in;}
+            #a5{animation-timing-function: ease-in-out;}
+
+            @keyframes divmove {
+                from{left: 0px;}
+                to{left: 300px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div><h2>animation</h2>
+        <div class="div"></div>
+        <div><h2>animation2</h2>
+        <div class="div1"></div>
+        <div><h2>animation3</h2>
+        <div class="div2"></div> 
+        <div><h2>animation4</h2>
+        <div class="div3"></div>  
+        <div><h2>animation5</h2>
+        <div class="div4"></div>  
+        <div><h2>animation6</h2>
+        <div class="div5"></div>       
+        </div>
+
+        <div class="a1" style="height:50px; width: 50px; animation-name: divmove; background-color: rgb(255, 0, 191);"></div>
+        <div class="a2" style="height:50px; width: 50px; animation-name: divmove; background-color: rgb(255, 0, 191);"></div>
+        <div class="a3" style="height:50px; width: 50px; animation-name: divmove; background-color: rgb(255, 0, 191);"></div>
+        <div class="a4" style="height:50px; width: 50px; animation-name: divmove; background-color: rgb(255, 0, 191);"></div>
+        <div class="a5" style="height:50px; width: 50px; animation-name: divmove; background-color: rgb(255, 0, 191);"></div>
+    </body>
+</html>
