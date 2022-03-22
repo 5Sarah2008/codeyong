@@ -88,6 +88,42 @@
                 margin: 10px;
             }
 
+		    #orange {
+        background-color: rgb(255, 0, 0);
+    }
+
+    #green {
+        background-color: rgb(128, 0, 60);
+    }
+
+
+
+    #blue {
+        background-color: rgb(255, 0, 200);
+    }
+
+    #red {
+        background-color: rgb(195, 0, 255);
+    }
+
+    #adiv {
+        width: 100%;
+        height: 150%;
+        animation-name: change;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        background-color: green;
+        color: white;
+    }
+
+    @keyframes change {
+        0% {background-color: rgb(128, 0, 60);}
+        20% {background-color: rgb(255, 0, 200);}
+        40% {background-color: rgb(255, 0, 0);}
+        60% {background-color: rgb(255, 0, 242);}
+        80% {background-color: rgb(195, 0, 255);}
+        100% {background-color: rgb(128, 0, 60);}
+    }
         </style>
     </head>
     <body>
